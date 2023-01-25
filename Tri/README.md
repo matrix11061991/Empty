@@ -13,6 +13,6 @@ Il existe plusieurs algorithmes de tri différents, chacun ayant des avantages e
 
 * Tri par sélection (Selection Sort) : c'est un algorithme de tri simple qui fonctionne en sélectionnant le plus petit élément de la liste non triée et en le déplaçant à la fin de la liste triée. Il a une complexité temporelle de `O(n^2)` dans le pire des cas, c'est un algorithest un algorithme peu efficace pour des listes de grande taille.
 
-Tri par tas (Heap Sort) : c'est un algorithme de tri basé sur l'utilisation d'un tas binaire pour organiser les éléments de la liste. Il a une complexité temporelle de O(n log(n)) dans tous les cas.
+* Tri par tas (Heap Sort) : c'est un algorithme de tri basé sur l'utilisation d'un tas binaire pour organiser les éléments de la liste. Il a une complexité temporelle de O(n log(n)) dans tous les cas.
 
-Tri radix (Radix Sort) : cet algorithme de tri est efficace pour des listes d'entiers avec des valeurs de grande taille. Il trie les éléments en utilisant les chiffres individuels (ou "radix") des nombres, en commençant par le chiffre des unités et en finissant par le chiffre des unités de puissance supérieure. Il a une complexité temporelle de `O(nk)` où `k` est le nombre de chiffres dans la valeur la plus grande.
+* Tri radix (Radix Sort) : cet algorithme de tri est efficace pour des listes d'entiers avec des valeurs de grande taille. Il trie les éléments en utilisant les chiffres individuels (ou "radix") des nombres, en commençant par le chiffre des unités et en finissant par le chiffre des unités de puissance supérieure. Il a une complexité temporelle de `O(nk)` où `k` est le nombre de chiffres dans la valeur la plus grande.
