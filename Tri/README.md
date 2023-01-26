@@ -48,4 +48,66 @@ def quick_sort(arr, low, high):
         quick_sort(arr, pi + 1, high)
     return arr
 ```
+## Tri fusion (Merge Sort) :
+```python
+def merge_sort(arr):
+    if len(arr) > 1:
+        mid = len(arr)//2
+        L = arr[:mid]
+        R = arr[mid:]
 
+        merge_sort(L)
+        merge_sort(R)
+
+        i = j = k = 0
+
+        while i < len(L) and j < len(R):
+            if L[i] < R[j]:
+                arr[k] =L[i]
+                i += 1
+                else:
+                arr[k] = R[j]
+                j += 1
+                k += 1
+            while i < len(L):
+        arr[k] = L[i]
+        i += 1
+        k += 1
+
+        while j < len(R):
+            arr[k] = R[j]
+            j += 1
+            k += 1
+    return arr
+```
+## Tri par comptage (Counting Sort) :
+## Tri par sélection (Selection Sort) :
+## Tri par tas (Heap Sort) :
+```python
+def heapify(arr, n, i):
+    largest = i
+    l = 2 * i + 1
+    r = 2 * i + 2
+ 
+    if l < n and arr[i] < arr[l]:
+        largest = l
+ 
+    if r < n and arr[largest] < arr[r]:
+        largest = r
+ 
+    if largest != i:
+        arr[i],arr[largest] = arr[largest],arr[i]
+ 
+        heapify(arr, n, largest)
+
+def heap_sort(arr):
+    n = len(arr)
+ 
+    for i in range(n, -1, -1):
+        heapify(arr, n, i)
+ 
+    for i in range(n-1, 0, -1):
+        arr[i], arr[0] = arr[0], arr[i]
+        heapify(arr, i, 0)
+    return arr
+```
